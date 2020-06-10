@@ -1,0 +1,13 @@
+@import "../Layout/Layout.scss";
+.nav {
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    color: $primary-color;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
