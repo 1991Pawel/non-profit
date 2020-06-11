@@ -364,6 +364,10 @@
   &__content {
     text-align: center;
 
+    &--order {
+      order: -1;
+    }
+
     @media (min-width: $screen-sm) {
       text-align: left;
       width: 90%;
@@ -384,12 +388,19 @@
 }
 
 .subscribe {
-  padding: 1rem;
   background-color: $secondary-color;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 1rem 1rem;
+
+  @media (min-width: $screen-lg) {
+    padding: 3rem 1rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   &__title {
     text-align: center;
@@ -418,16 +429,18 @@
 
 .footer {
   padding: 1rem;
-  background-color: $light-color;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  &__container {
+    background-color: $light-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  @media (min-width: $screen-md) {
-    grid-template-columns: 1fr 15rem 15rem;
-  }
-  @media (min-width: $screen-xl) {
-    grid-template-columns: 1fr 15rem 15rem 15rem 1fr;
-    grid-gap: 2rem;
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 15rem 15rem;
+    }
+    @media (min-width: $screen-xl) {
+      grid-template-columns: 1fr 10rem 10rem 10rem 1fr;
+      grid-gap: 2rem;
+    }
   }
 
   &__logo,
@@ -463,11 +476,13 @@
     @media (min-width: $screen-md) {
       grid-column: 3 / span 1;
       grid-row: 2 / span 1;
+      font-size: 3.5rem;
     }
     @media (min-width: $screen-xl) {
       grid-row: 1 / span 1;
       grid-column: 5 / span 1;
       margin-left: auto;
+      font-size: 4rem;
     }
   }
   &__list {

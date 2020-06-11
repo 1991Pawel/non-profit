@@ -234,28 +234,7 @@ const IndexPage = () => (
             </a>
           </div>
         </article>
-        <article className="events__event">
-          <div className="events__image">
-            <img src={event} alt="" />
-            <span className="fancy-subtitle fancy-subtitle--absolute fancy-subtitle--light ">
-              Stories
-            </span>
-          </div>
-          <div className="events__content">
-            <h3 className="events__heading big-text big-text--light">
-              Earth Day 2018 community tree planting event
-            </h3>
-            <p className="events__desc font-light font-light--light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
-              felis, auctor vitae vestibulum vel, consequat eu dolor. Nam
-              pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl
-              laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
-            </p>
-            <a className="events__btn button-link" href="">
-              Read More
-            </a>
-          </div>
-        </article>
+
         <article className="events__event">
           <div className="events__image">
             <img src={event} alt="" />
@@ -263,7 +242,7 @@ const IndexPage = () => (
               LATEST NEWS
             </span>
           </div>
-          <div className="events__content">
+          <div className="events__content events__content--order">
             <h3 className="events__heading big-text big-text--light">
               Earth Day 2018 community tree planting event
             </h3>
@@ -281,67 +260,71 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="subscribe">
-      <h3 className="subscribe__title big-text">
-        Subscribe to our monthly newsletter and stay up to date with all news
-        and events.
-      </h3>
-      <input
-        placeholder="Enter you email adress"
-        className="subscribe__input"
-        type="text"
-      />
-      <button
-        className="subscribe__btn button-link button-link--secondary"
-        type="button"
-      >
-        Subscribe
-      </button>
+      <div className="subscribe__container container">
+        <h3 className="subscribe__title big-text">
+          Subscribe to our monthly newsletter and stay up to date with all news
+          and events.
+        </h3>
+        <input
+          placeholder="Enter you email adress"
+          className="subscribe__input"
+          type="text"
+        />
+        <button
+          className="subscribe__btn button-link button-link--secondary"
+          type="button"
+        >
+          Subscribe
+        </button>
+      </div>
     </section>
     <footer className="footer">
-      <div className="footer__logo">The Green Trees Initiative</div>
-      <div className="footer__contact">
-        <h5 className="footer__heading">CONTACT US</h5>
-        <div className="footer__content">
-          <p className="font-light">
-            123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org
-          </p>
+      <div className="footer__container container">
+        <div className="footer__logo">The Green Trees Initiative</div>
+        <div className="footer__contact">
+          <h5 className="footer__heading">CONTACT US</h5>
+          <div className="footer__content">
+            <p className="font-light">
+              123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org
+            </p>
+          </div>
         </div>
+        <div className="footer__contact">
+          <h5 className="footer__heading">FOLLOW US</h5>
+          <ul className="footer__list">
+            <li>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">Twitter</a>
+            </li>
+            <li>
+              <a href="">Instagram</a>
+            </li>
+            <li>
+              <a href="">Medium</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer__contact">
+          <h5 className="footer__heading">LEARN MORE</h5>
+          <ul className="footer__list">
+            <li>
+              <a href="">The issue</a>
+            </li>
+            <li>
+              <a href="">How we help</a>
+            </li>
+            <li>
+              <a href="">Get involved</a>
+            </li>
+            <li>
+              <a href="">Latest news</a>
+            </li>
+          </ul>
+        </div>
+        <h3 className="footer__slogan fancy-title">#stop climate change</h3>
       </div>
-      <div className="footer__contact">
-        <h5 className="footer__heading">FOLLOW US</h5>
-        <ul className="footer__list">
-          <li>
-            <a href="">Facebook</a>
-          </li>
-          <li>
-            <a href="">Twitter</a>
-          </li>
-          <li>
-            <a href="">Instagram</a>
-          </li>
-          <li>
-            <a href="">Medium</a>
-          </li>
-        </ul>
-      </div>
-      <div className="footer__contact">
-        <h5 className="footer__heading">LEARN MORE</h5>
-        <ul className="footer__list">
-          <li>
-            <a href="">The issue</a>
-          </li>
-          <li>
-            <a href="">How we help</a>
-          </li>
-          <li>
-            <a href="">Get involved</a>
-          </li>
-          <li>
-            <a href="">Latest news</a>
-          </li>
-        </ul>
-      </div>
-      <h3 className="footer__slogan fancy-title">#stop climate change</h3>
     </footer>
   </Layout>
 )

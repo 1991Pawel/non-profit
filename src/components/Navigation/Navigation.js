@@ -11,12 +11,12 @@ const Navigation = () => (
         </Link>
       </li>
       <li>
-        <Link className="nav__link" to="/about">
+        <Link className="nav__link" to="/">
           Our stories
         </Link>
       </li>
       <li>
-        <Link className="nav__link" to="/news">
+        <Link className="nav__link" to="/">
           News and events
         </Link>
       </li>
