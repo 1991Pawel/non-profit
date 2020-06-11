@@ -5,7 +5,7 @@ import "../style/style.scss"
 import tree from "../images/tree.png"
 import social from "../images/fb-icon.png"
 import stories from "../images/stories.png"
-import event from "../images/event.png"
+import event from "../images/meeting.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -219,7 +219,7 @@ const IndexPage = () => (
               Stories
             </span>
           </div>
-          <div className="events__content">
+          <div className="events__content events__content--right">
             <h3 className="events__heading big-text big-text--light">
               Earth Day 2018 community tree planting event
             </h3>
@@ -242,7 +242,7 @@ const IndexPage = () => (
               LATEST NEWS
             </span>
           </div>
-          <div className="events__content events__content--order">
+          <div className="events__content events__content--left">
             <h3 className="events__heading big-text big-text--light">
               Earth Day 2018 community tree planting event
             </h3>

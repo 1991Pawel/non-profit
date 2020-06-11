@@ -3,11 +3,15 @@
 //intro
 
 .intro {
-  background-image: url(../images//homeImg.svg);
+  background-image: url(../images//homeImg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 1rem;
+
+  @media (min-width: $screen-lg) {
+    background-position: top;
+  }
 
   &__link {
     margin-top: 1rem;
@@ -173,6 +177,11 @@
   background-image: url(../images/do-you-know.jpg);
   min-height: 30vh;
   background-size: cover;
+
+  @media (min-width: $screen-lg) {
+    background-image: url(../images/do-you-know-2.jpg);
+    background-position: bottom;
+  }
 
   &__container {
     @media (min-width: $screen-md) {
@@ -363,15 +372,19 @@
 
   &__content {
     text-align: center;
+    // margin-left: auto;
 
-    &--order {
+    &--left {
       order: -1;
+      margin-right: auto;
+    }
+    &--right {
+      margin-left: auto;
     }
 
     @media (min-width: $screen-sm) {
       text-align: left;
       width: 90%;
-      margin-left: auto;
     }
     @media (min-width: $screen-lg) {
       width: 80%;
